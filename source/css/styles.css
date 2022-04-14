@@ -1,13 +1,13 @@
 :root {
-  --white-color : #fff;
+  --white-color: #fff;
   --primary-color: #00a3d3;
   --brown-color: #4c252f;
   --light-brown: #f0f0f0;
 }
 
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -25,10 +25,10 @@ body {
 }
 
 #section0 {
-  padding: 4rem 7.2rem ;
+  padding: 4rem 7.2rem;
   position: relative;
-  background: url("../image/section0/headerBackground.png") ;
-  background-size: cover;
+  background: url("../image/section0/headerBackground.png") no-repeat;
+  background-size: 100% 100%;
   width: 100%;
   height: 66.6rem;
 }
@@ -43,10 +43,10 @@ body {
 }
 
 .header .nav {
-  margin: 0 ;
-  padding: 0 ;
-  list-style: none ;
-  display: flex ;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
   padding: 0 1rem;
   align-items: center;
 }
@@ -60,40 +60,42 @@ body {
 }
 
 .header .nav .nav-item a {
-  text-decoration: none ;
-  color: var(--white-color) ;
+  text-decoration: none;
+  color: var(--white-color);
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   font-weight: 700;
 }
 
-#section0 .dog-food-img,
-.dog-food-img1{
+/* #section0 .dog-food-img,
+.dog-food-img1 {
   position: absolute;
   top: 24.6rem;
   left: -3rem;
   z-index: 1;
 }
 
-#section0 .text-img{
+#section0 .text-img {
   position: absolute;
   top: 19rem;
   left: 53.6rem;
 }
 
-#section0 .dog-img{
+#section0 .dog-img {
   position: absolute;
-  width: 44.6rem ;
+  width: 44.6rem;
   bottom: 0;
   right: 0;
   overflow: hidden;
   display: flex;
-}
+} */
 
 #section1 {
-  padding: 12rem 6rem ;
+  padding: 12rem 6rem;
   position: relative;
   background-color: var(--white-color);
+  margin-top: -5.7rem;
+  z-index: -1;
 }
 
 #section1 .section1-content {
@@ -142,7 +144,7 @@ body {
 }
 
 .section1-content .section1-desc a:hover {
- opacity: 0.8;
+  opacity: 0.8;
 }
 
 #section1 .dog-food-img {
@@ -151,11 +153,6 @@ body {
   right: 6rem;
 }
 
-#section1 .dog-img {
-  position: absolute;
-  top: 6.5rem;
-  left: 0;
-}
 
 #section2 {
   padding: 6rem;
@@ -165,6 +162,19 @@ body {
   background-size: cover;
   width: 100%;
   align-items: center;
+  position: relative;
+}
+
+#section2 .dog-img {
+  position: absolute;
+  top: -42rem;
+  left: 0;
+}
+
+#section2 .dog-sound {
+  position: absolute;
+  top: 10%;
+  left: 4%;
 }
 
 #section2 .section2-title {
@@ -246,6 +256,7 @@ body {
   top: 1.6rem;
   right: 0;
   opacity: 0.5;
+  font-size: 1.6rem;
   cursor: pointer;
 }
 
@@ -271,6 +282,7 @@ body {
 #section4 .text {
   margin: 2.2rem 0 1rem;
   color: #555;
+  font-size: 1.6rem;
 }
 
 #section5 {
@@ -293,19 +305,12 @@ body {
 }
 
 #section6 .section6-content {
-  background: url('../image/footer/background.png');
+  background: url("../image/footer/background.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   width: 100%;
   height: 52.5rem;
   position: relative;
-}
-
-#section6 .section6-logo {
-  position: absolute;
-  top: 18rem;
-  left: 68rem;
-  cursor: pointer;
 }
 
 #section6 ul {
@@ -333,23 +338,23 @@ body {
   margin-left: 5rem;
 }
 
-#section6 .nav-list li:nth-child(3){
+#section6 .nav-list li:nth-child(3) {
   margin: 0;
 }
 
-#section6 .nav-list>.copy-right {
+#section6 .nav-list > .copy-right {
   display: flex;
   margin: 5rem 0 0;
   font-size: 1.4rem;
 }
 
-#section6 .nav-list>.copy-right i {
+#section6 .nav-list > .copy-right i {
   margin-right: 0.5rem;
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
-#section6 .nav-list>.copy-right p {
+#section6 .nav-list > .copy-right p {
   margin: 0;
   letter-spacing: 0.05rem;
 }
@@ -385,16 +390,17 @@ body {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   html {
     font-size: 20%;
   }
+
   body {
     width: 100%;
   }
 
   img {
-    width: 30% ;
+    width: 30%;
   }
 
   #section0 .dog-food-img {
@@ -413,7 +419,8 @@ body {
     left: 55rem;
     top: 25rem;
   }
-  #section0 .dog-img{
+
+  #section0 .dog-img {
     width: 20%;
   }
 
@@ -421,15 +428,11 @@ body {
     flex: 1;
   }
 
-  #section1 .dog-img {
-    top: 15rem;
-  }
-
-  #section1 .dog-food-img{
+  #section1 .dog-food-img {
     display: none;
   }
 
-  #section3 .section3-img{
+  #section3 .section3-img {
     width: 5%;
   }
 
@@ -438,7 +441,7 @@ body {
     min-width: 0;
   }
 
-  #section4 .dog-img{
+  #section4 .dog-img {
     width: 20%;
     top: -5rem;
     left: 38rem;
@@ -456,4 +459,4 @@ body {
   #section6 .social-media li + li {
     margin-left: -6rem;
   }
-}
+} */
