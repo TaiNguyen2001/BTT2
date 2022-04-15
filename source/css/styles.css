@@ -1,0 +1,373 @@
+:root {
+  --white-color: #fff;
+  --primary-color: #00a3d3;
+  --brown-color: #4c252f;
+  --light-brown: #f0f0f0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  background-color: aliceblue;
+  font-size: 62.5%;
+}
+
+body {
+  width: 144rem;
+  margin: auto;
+}
+
+#section0 {
+  padding: 4rem 7.2rem;
+  position: relative;
+  background: url("../image/section0/headerBackground.png") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 66.6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  cursor: pointer;
+}
+
+.header .nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.header .nav .nav-item {
+  padding: 0 0 0 5.5rem;
+}
+
+.header .nav .nav-item:hover a {
+  color: #f0f0f0;
+}
+
+.header .nav .nav-item a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+
+#section1 {
+  padding: 12rem 6rem;
+  position: relative;
+  background-color: var(--white-color);
+  margin-top: -5.7rem;
+  z-index: -1;
+}
+
+#section1 .section1-content {
+  display: flex;
+  width: 66%;
+  margin: 0 0 0 10rem;
+}
+
+.section1-content .section1-header {
+  width: 40%;
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: var(--brown-color);
+  margin-left: 4.6rem;
+}
+
+.section1-content .section1-header span {
+  font-size: 9rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 0.7;
+}
+
+.section1-content .section1-desc {
+  width: 60%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  line-height: 1.7;
+  z-index: 1;
+}
+
+.section1-content .section1-desc span {
+  display: block;
+  color: #555;
+}
+
+.section1-content .section1-desc a {
+  display: block;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+}
+
+.section1-content .section1-desc a:hover {
+  opacity: 0.8;
+}
+
+#section1 .dog-food-img {
+  position: absolute;
+  top: 12rem;
+  right: 6rem;
+}
+
+#section0 i {
+  display: none;
+} 
+
+
+#section2 {
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  background: url(../image/section2/background.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+#section2 .dog-img {
+  position: absolute;
+  top: -42rem;
+  left: 0;
+}
+
+#section2 .dog-sound {
+  position: absolute;
+  top: 10%;
+  left: 4%;
+}
+
+#section2 .section2-title {
+  margin: auto;
+}
+
+#section2 .section2-text {
+  margin-top: 7.5rem;
+  color: var(--white-color);
+  padding: 0 29rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  line-height: 1.7;
+}
+
+#section3 {
+  display: flex;
+  position: relative;
+  background-color: var(--white-color);
+  padding: 9rem 19rem 13rem 26.5rem;
+}
+
+#section3 .section3-content {
+  margin-top: 9rem;
+}
+
+#section3 .section3-content .text {
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 1.7;
+  letter-spacing: 0.13rem;
+}
+
+
+#section3 .section3-img {
+  position: absolute;
+  top: 10rem;
+  right: 15rem;
+}
+
+#section3 .section3-btn {
+  margin-top: 1.2rem;
+}
+
+
+#section4 {
+  display: flex;
+  position: relative;
+  padding: 10rem 13rem;
+  justify-content: space-between;
+  background-color: var(--light-brown);
+}
+
+#section4 .input-field {
+  margin-top: 2rem;
+  min-width: 35rem;
+  display: flex;
+  padding: 1rem 0;
+  position: relative;
+  border-bottom: 0.1rem solid #888;
+}
+
+#section4 .input-field input {
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  color: #555;
+  line-height: 1.7;
+  background-color: transparent;
+  flex: 1;
+  padding: 0;
+}
+
+#section4 .input-field i {
+  display: block;
+  position: absolute;
+  top: 1.6rem;
+  right: 0;
+  opacity: 0.5;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+#section4 .input-field i:hover {
+  opacity: 0.8;
+}
+
+#section4 .section4-btn {
+  margin-top: 3.5rem;
+}
+
+#section4 .dog-img {
+  position: absolute;
+  top: -8.5rem;
+  left: calc(50% - 12.5rem);
+}
+
+#section4 .section4-content {
+  max-width: 41.5rem;
+}
+
+#section5 .section5-content .text,
+#section4 .text {
+  margin: 2.2rem 0 1rem;
+  color: #555;
+  font-size: 1.6rem;
+}
+
+#section5 {
+  display: flex;
+  padding: 15rem 30rem 10.5rem 22rem;
+  background-color: var(--white-color);
+}
+
+#section5 .section5-content {
+  margin: 5.5rem 0 0 3rem;
+}
+
+#section5 .section5-btn {
+  margin-top: 1.6rem;
+}
+
+#section6 {
+  padding: 0 5.5rem 7rem 5.5rem;
+  background-color: var(--white-color);
+}
+
+#section6 .section6-content {
+  background: url("../image/footer/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 52.5rem;
+  position: relative;
+}
+
+#section6 ul {
+  margin: 0;
+  list-style: none;
+}
+
+#section6 .nav-list {
+  position: absolute;
+  display: flex;
+  top: 40rem;
+  left: 66.5rem;
+  max-width: 38rem;
+  flex-wrap: wrap;
+}
+
+#section6 .nav-list .nav-item a {
+  color: var(--brown-color);
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
+}
+
+#section6 .nav-list li + li {
+  margin-left: 5rem;
+}
+
+#section6 .nav-list li:nth-child(3) {
+  margin: 0;
+}
+
+#section6 .nav-list > .copy-right {
+  display: flex;
+  margin: 5rem 0 0;
+  font-size: 1.4rem;
+}
+
+#section6 .nav-list > .copy-right i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#section6 .nav-list > .copy-right p {
+  margin: 0;
+  letter-spacing: 0.05rem;
+}
+
+#section6 .social-media {
+  position: absolute;
+  bottom: 2.2rem;
+  right: 3rem;
+  display: flex;
+}
+
+#section6 .nav-list .nav-item a:hover,
+#section6 .social-media li:hover {
+  opacity: 0.8;
+}
+
+#section6 .social-media li + li {
+  margin-left: 1.2rem;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  outline: none;
+  padding: 1.6rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
