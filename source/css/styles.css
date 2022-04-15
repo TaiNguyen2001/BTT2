@@ -67,29 +67,6 @@ body {
   font-weight: 700;
 }
 
-/* #section0 .dog-food-img,
-.dog-food-img1 {
-  position: absolute;
-  top: 24.6rem;
-  left: -3rem;
-  z-index: 1;
-}
-
-#section0 .text-img {
-  position: absolute;
-  top: 19rem;
-  left: 53.6rem;
-}
-
-#section0 .dog-img {
-  position: absolute;
-  width: 44.6rem;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-  display: flex;
-} */
-
 #section1 {
   padding: 12rem 6rem;
   position: relative;
@@ -152,6 +129,10 @@ body {
   top: 12rem;
   right: 6rem;
 }
+
+#section0 i {
+  display: none;
+} 
 
 
 #section2 {
@@ -390,73 +371,3 @@ body {
   opacity: 0.8;
 }
 
-/* @media screen and (max-width: 800px) {
-  html {
-    font-size: 20%;
-  }
-
-  body {
-    width: 100%;
-  }
-
-  img {
-    width: 30%;
-  }
-
-  #section0 .dog-food-img {
-    width: 30%;
-    top: 40rem;
-  }
-
-  #section0 .dog-food-img1 {
-    width: 65%;
-    top: 30rem;
-    left: 13rem;
-  }
-
-  #section0 .text-img {
-    width: 18%;
-    left: 55rem;
-    top: 25rem;
-  }
-
-  #section0 .dog-img {
-    width: 20%;
-  }
-
-  #section0 .dog-img img {
-    flex: 1;
-  }
-
-  #section1 .dog-food-img {
-    display: none;
-  }
-
-  #section3 .section3-img {
-    width: 5%;
-  }
-
-  #section4 .input-field {
-    max-width: 20rem;
-    min-width: 0;
-  }
-
-  #section4 .dog-img {
-    width: 20%;
-    top: -5rem;
-    left: 38rem;
-  }
-
-  #section6 .section6-logo {
-    left: 65rem;
-  }
-
-  #section6 .nav-list {
-    left: 38rem;
-    max-width: 45rem;
-  }
-
-  #section6 .social-media li + li {
-    margin-left: -6rem;
-  }
-} */
