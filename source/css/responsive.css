@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
 	html {
-		font-size: 30%;
+		font-size: 35%;
 	}
 	body {
 		width: 100%;
@@ -31,6 +31,12 @@
   #section1 .section1-content {
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    margin: 0;
+  }
+
+  .section1-content .section1-desc {
+    width: 95%;
   }
 
   #section2 .dog-sound {
@@ -38,7 +44,16 @@
   }
 
   #section2 .dog-img {
-    display: none;
+    top: 50%;
+    z-index: 1;
+  }
+
+  #section2 .section2-text {
+    padding: 0 2rem;
+  }
+
+  #section3 {
+    padding: 6rem;
   }
 
 	#section3 .section3-img{
@@ -53,6 +68,7 @@
   #section4 {
     flex-direction: column;
     align-items: center;
+    padding: 6rem;
   }
 
 	#section4 .input-field {
@@ -66,11 +82,13 @@
   }
 
 	#section4 .dog-img {
-		display: none;
+		/* display: none; */
+    top: 2rem;
+    left: 70%;
 	}
 
 	#section5 {
-		padding: 15rem 10rem 10.5rem 15rem;
+		padding: 6rem;
 	}
 
 	#section6 .section6-logo {
@@ -140,18 +158,6 @@
 		max-width: 40rem;
 	}
 
-	#section6 .social-media li {
-		width: 60%;
-	}
-
-	#section6 .social-media li + li {
-		margin-left: -2.8rem;
-	}
-
-	#section6 .nav-list {
-		display: none;
-	}
-
 	#section6 .social-media {
 		display: none;
 	}
@@ -160,10 +166,6 @@
 @media screen and (min-width: 1000px)and (max-width: 1440px){
 	body {
 		width: 100%;
-	}
-
-  #section4 .dog-img {
-		display: none;
 	}
 }
 
