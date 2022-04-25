@@ -1,6 +1,6 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 	html {
-		font-size: 35%;
+		font-size: 50%;
 	}
 	body {
 		width: 100%;
@@ -14,29 +14,48 @@
 		display: none;
 	}
 
+  #section0 {
+    height: 30rem;
+  }
+
 	#section0 .nav {
 		display: none;
 	}
 
 	#section0 i {
 		display: block;
-    font-size: 5rem;
+    font-size: 3rem;
     opacity: 0.5;
+    position: relative;
+    top: -3rem;
+    right: -6rem;
 	}
 
 	.title {
 		width: 65%;
 	}
 
+  #section1 {
+    padding: 5rem 2rem;
+  }
+
   #section1 .section1-content {
     flex-direction: column;
-    align-items: center;
-    width: 90%;
+    align-items: flex-start;
     margin: 0;
+    width: 100%;
   }
 
   .section1-content .section1-desc {
     width: 95%;
+  }
+
+  .section1-content .section1-header {
+    margin: 0;
+  }
+
+  #section2 {
+    padding: 2rem;
   }
 
   #section2 .dog-sound {
@@ -44,52 +63,79 @@
   }
 
   #section2 .dog-img {
-    top: 50%;
-    z-index: 1;
+    display: none;
   }
 
   #section2 .section2-text {
-    padding: 0 2rem;
+    padding: 0 ;
+  }
+
+  #section2 .section2-title {
+    margin: 0;
+    width: 50%;
   }
 
   #section3 {
-    padding: 6rem;
+    padding: 2rem;
+    align-items: center;
   }
 
-	#section3 .section3-img{
-		width: 5%;
-	}
+  #section3 .section3-img{
+    width: 5%;
+  }
 
-	#section3 .section3-dog-img,
-	.section3-img {
-		display: none;
-	}
+  #section3 .section3-content {
+    margin-top: 2rem;
+  }
+
+  #section3 .section3-dog-img {
+    height: 100%;
+  }
+
+  .section3-img {
+    display: none;
+  }
 
   #section4 {
     flex-direction: column;
-    align-items: center;
-    padding: 6rem;
+    padding: 2rem;
   }
 
-	#section4 .input-field {
-		max-width: 20rem;
-		min-width: 0;
-	}
+  #section4 .input-field {
+    max-width: 20rem;
+    min-width: 0;
+  }
 
   #section4 .section4-content {
-    max-width: 100%;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    max-width: 80%;
   }
 
-	#section4 .dog-img {
-		/* display: none; */
+  #section4 .dog-img {
     top: 2rem;
     left: 70%;
-	}
+  }
 
-	#section5 {
-		padding: 6rem;
-	}
+  #section5 {
+    padding: 2rem;
+    align-items: center;
+  }
+
+  #section5 .section5-img {
+    height: 100%;
+  }
+
+  #section5 .section5-content {
+    margin: 0;
+  }
+
+  .section5-content .title {
+    width: 95%;
+  }
+
+  #section6 {
+    padding: 2rem;
+  }
 
 	#section6 .section6-logo {
 		left: 65rem;
@@ -98,6 +144,10 @@
 	#section6 .nav-list {
 		display: none;
 	}
+
+  #section6 .section6-content {
+    height: 25rem;
+  }
 
 	#section6 .social-media li + li {
 		margin-left: -6rem;
@@ -108,9 +158,9 @@
 	}
 }
 
-@media screen and (min-width: 501px) and (max-width: 1200px){
+@media screen and (min-width: 701px) and (max-width: 1200px){
 	html {
-		font-size: 40%;
+		font-size: 60%;
 	}
 	body {
 		width: 100%;
@@ -124,9 +174,17 @@
 		width: 65%;
 	}
 
+  #section1 {
+    padding: 6rem;
+  }
+
   #section1 .section1-content {
     flex-direction: column;
-    align-items: center;
+    margin-left: 0;
+  }
+
+  #section1 .section1-desc {
+    width: 100%;
   }
 
   #section2 .dog-sound {
@@ -137,10 +195,20 @@
     display: none;
   }
 
-	#section3 .section3-img {
-		width: 5%;
+  #section2 .section2-text {
+    padding: 0;
 	}
 
+  #section3,
+  #section4,
+  #section5 {
+    padding: 6rem;
+  }
+
+	#section3 .section3-img {
+    display: none;
+	}
+  
 	#section4 .input-field {
 		max-width: 20rem;
 		min-width: 0;
@@ -150,17 +218,24 @@
 		display: none;
 	}
 
-	#section5 {
-		padding: 15rem 10rem 10.5rem 15rem;
-	}
-
 	#section6 .nav-list {
 		max-width: 40rem;
+    flex-direction: column;
+    padding: 0;
+    left: 50%;
 	}
 
 	#section6 .social-media {
 		display: none;
 	}
+
+  #section6 .nav-list li + li {
+    margin-left: 0;
+  }
+
+  #section6 .nav-list > .copy-right {
+    margin: 1rem 0 0;
+  }
 }
 
 @media screen and (min-width: 1000px)and (max-width: 1440px){
